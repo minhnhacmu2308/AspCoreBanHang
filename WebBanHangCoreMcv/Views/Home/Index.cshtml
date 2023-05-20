@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="top-sale ">
+    <h3 class="mt-3 d-flex justify-content-center">
+        Danh Sách Sản Phẩm
+    </h3>
+    <div class="ts-time">
+        <div class="ts-product mt-3">
+            <div class="row">
+                @foreach (var item in ViewBag.products)
+                {
+                    <div class="col-lg-3 col-6 mb-3">
+                        <div class="b-product">
+                            <a class="p-a a" href="@Url.Action("Detail", "Product", new { productId = item.ProductId })">
+                                <p class="p-img">
+                                    <img src="@item.Image" class="img-avatar img-fluid" />
+                                </p>
+                                <p class="p-title">
+                                   @item.Name
+                                </p>
+                                <p class="p-newPrice">
+                                    @{
+                                        int giaKhuyenMai = item.Price - ((item.Price * item.Discount) / 100);
+                                    }
+                                    @giaKhuyenMai.ToString("#,##0")
+                                </p>
+                                <p class="p-oldPrice">
+                                    <span class="p-include">
+                                        @item.Price.ToString("#,##0")
+                                    </span>
+                                    <span class="p-bonus">
+                                       @item.Discount %
+                                    </span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,35 @@
+﻿@model List<Category>
+
+<div class="b-menu py-1">
+    <ul class="b-ul">
+        @foreach (var item in Model)
+        {
+            if (item.ParrentId == 0)
+            {
+                <li class="b-li">
+                    <a class="b-a" href="@Url.Action("ByCategory", "Product", new { categoryId = item.CategoryId })">
+                        @item.Name
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="bd-ul">
+                        @foreach (var item1 in Model)
+                        {
+                            if (item.CategoryId == item1.ParrentId)
+                            {
+                                <li class="bd-li">
+                                    <a class="bd-a" href="@Url.Action("ByCategory", "Product", new { categoryId = item1.CategoryId })">
+                                        @item1.Name
+                                    </a>
+                                </li>
+                            }
+
+                        }
+
+                    </ul>
+                </li>
+            }
+
+        }
+
+    </ul>
+</div>

@@ -1,0 +1,1084 @@
+﻿@using WebBanHangCoreMcv.ViewComponents;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="~/bootstrap.css" rel="stylesheet" />
+    <link href="~/font-awesome.css" rel="stylesheet" />
+    <link href="~/main-style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <!-- TopLink -->
+        <div class="t-link">
+            <div class="container ">
+                <img class="img-fluid l-img" src="~/Image/banner/cf986a43-5d4b-4cd1-96d7-ff8344da2ebd.jpg" />
+            </div>
+        </div>
+
+
+        <!-- Menu -->
+        <div class="m-bo sticky-top">
+            <div class="container">
+                <div class="m-menu">
+                    <ul class="m-ul">
+                        <li class="m-li">
+                            <a class="m-a c-black" href="#">
+                                <small>
+                                    Tiết kiệm hơn với ứng dụng
+                                </small>
+                            </a>
+                        </li>
+                        <li class="m-li">
+                            <a class="m-a c-black" href="../WelcomeSell.html">
+                                <small>
+                                    BÁN HÀNG CÙNG LAZADA
+                                </small>
+                            </a>
+                        </li>
+                        <li class="m-li">
+                            <a class="m-a c-gray" href="#">
+                                <small>
+                                    CHĂM SÓC KHÁCH HÀNG
+                                </small>
+                            </a>
+                        </li>
+                        <li class="m-li">
+                            <a class="m-a c-gray" href="../ShoppingCart.html">
+                                <small>
+                                    Kiểm tra đơn hàng
+                                </small>
+                            </a>
+                        </li>
+                        <li class="m-li">
+                            <a class="m-a c-gray" href="../LoginClient.html">
+                                <small>
+                                    ĐĂNG NHẬP
+                                </small>
+                            </a>
+                        </li>
+                        <li class="m-li">
+                            <a class="m-a c-gray" href="../RegisterClient.html">
+                                <small>
+                                    ĐĂNG KÝ
+                                </small>
+                            </a>
+                        </li>
+                        <li class="m-li">
+                            <a class="m-a c-gray" href="#">
+                                <small>
+                                    change language
+                                </small>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="m-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="logo">
+                                    <a href="/">
+                                        <img class="img-fluid" src="~/Image/bar/TB1T7K2d8Cw3KVjSZFuXXcAOpXa.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="search ">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="i-color form-control" placeholder="Tìm kiếm .....">
+                                        <button class="btn b-color btn-outline-secondary">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div class="cart">
+                                    <a class="c-a" href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="bonus">
+                                    <a href="#">
+                                        <img class="img-fluid" src="~/Image/bar/7d8681de-a7c6-43fa-b07b-37f787b424aa.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div class="main">
+            <div class="container">
+                <div class="m-box">
+                    <!-- banner -->
+                    <div class="b-banner">
+                        <div class="b-carousel">
+                            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button class="b-boder active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                                    <button class="b-boder" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button class="b-boder" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button class="b-boder" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button class="b-boder" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button class="b-boder" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button class="b-boder" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="h-360 carousel-item active" data-bs-interval="5000">
+                                        <img src="~/Image/banner/b7.jpg" class="d-block w-100 b-img" alt="...">
+                                    </div>
+                                    <div class="h-360 carousel-item h-360" data-bs-interval="5000">
+                                        <img src="~/Image/banner/b2.jpg" class="d-block w-100 b-img" alt="...">
+                                    </div>
+                                    <div class="carousel-item h-360" data-bs-interval="5000">
+                                        <img src="~/Image/banner/b3.jpg" class="d-block w-100 b-img" alt="...">
+                                    </div>
+                                    <div class="carousel-item h-360" data-bs-interval="5000">
+                                        <img src="~/Image/banner/b4.jpg " class="d-block w-100 b-img" alt="...">
+                                    </div>
+                                    <div class="carousel-item h-360" data-bs-interval="5000">
+                                        <img src="~/Image/banner/b5.jpg" class="d-block w-100 b-img" alt="...">
+                                    </div>
+                                    <div class="carousel-item h-360" data-bs-interval="5000">
+                                        <img src="~/Image/banner/b6.jpg" class="d-block w-100 b-img" alt="...">
+                                    </div>
+                                    <div class="carousel-item h-360" data-bs-interval="5000">
+                                        <img src="~/Image/banner/b7.jpg" class="d-block w-100 b-img" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @await Component.InvokeAsync(nameof(vcMenu))
+                      
+                    </div>
+
+
+                    <!-- Service -->
+                    <div class="b-service pt-3">
+                        <div class="row">
+                            <div class="col-lg-3 ">
+                                <div class="s-box">
+                                    <a class="s-a" href="">
+                                        <img class="s-img" src="~/Image/service/s1.png" />
+                                        LazMall
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="s-box">
+                                    <a class="s-a" href="">
+                                        <img class="s-img" src="~/Image/service/s2.png" />
+                                        Mã Giảm Giá
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="s-box">
+                                    <a class="s-a" href="">
+                                        <img class="s-img" src="~/Image/service/s3.png" />
+                                        Nạp Thẻ &Aacute; eVoucher
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                                <div class="s-box">
+                                    <a class="s-a" href="">
+                                        <img class="s-img" src="~/Image/service/s4.png" />
+                                        LazGlobal
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @RenderBody()
+                    <!-- TopSale -->
+                  
+
+                    <!-- SearchPopular -->
+                    <!--<div class="searchpopular">
+                        <h3 class="sp-title mt-3">
+                            Tìm kiếm phổ biến
+                        </h3>
+                        <div class="row row-cols-lg-5 row-cols-3">
+                            <div class="col p-0">
+                                <div class="sp-box">
+                                    <a class="sp-a a" href="#">
+                                        <p class="sp-avatar">
+                                            <img class="sp-img img-fluid" src="FileUpload/Product/SearchPopular/t1.jpg" />
+                                        </p>
+                                        <p class="a-o">
+                                            Gấu Cưng
+                                        </p>
+                                        <p class="a-t">
+                                            29.567 sản phẩm
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="sp-box-t">
+                                    <div class="b-one">
+                                        <a class="a bo-a" href="#">
+                                            <p class="bo-avatar">
+                                                <img class="sp-img img-fluid" src="FileUpload/Product/SearchPopular/t2.png" />
+                                            </p>
+                                            <p class="bo-o">
+                                                Máy Rửa Xe
+                                                <br />
+                                                <span class="o-span">
+                                                    29,230 Sản phẩm
+                                                </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="b-two">
+                                        <a class="a bo-a" href="#">
+                                            <p class="bo-avatar">
+                                                <img class="sp-img img-fluid" src="FileUpload/Product/SearchPopular/t3.jpg" />
+                                            </p>
+                                            <p class="bo-o">
+                                                Tai Nghe Gaming
+                                                <br />
+                                                <span class="o-span">
+                                                    6,647 Sản phẩm
+                                                </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="sp-box-t">
+                                    <div class="b-one">
+                                        <a class="a bo-a" href="#">
+                                            <p class="bo-avatar">
+                                                <img class="sp-img img-fluid" src="FileUpload/Product/SearchPopular/t4.jpg" />
+                                            </p>
+                                            <p class="bo-o">
+                                                Đèn Led
+                                                <br />
+                                                <span class="o-span">
+                                                    20,553 Sản phẩm
+                                                </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="b-two">
+                                        <a class="a bo-a" href="#">
+                                            <p class="bo-avatar">
+                                                <img class="sp-img img-fluid" src="FileUpload/Product/SearchPopular/t5.png" />
+                                            </p>
+                                            <p class="bo-o">
+                                                Điện Thoại
+                                                <br />
+                                                <span class="o-span">
+                                                    997,048 Sản phẩm
+                                                </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="sp-box-t">
+                                    <div class="b-one">
+                                        <a class="a bo-a" href="#">
+                                            <p class="bo-avatar">
+                                                <img class="sp-img img-fluid" src="FileUpload/Product/SearchPopular/t6.png" />
+                                            </p>
+                                            <p class="bo-o">
+                                                Loa Karaoke
+                                                <br />
+                                                <span class="o-span">
+                                                    57,248 Sản phẩm
+                                                </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="b-two">
+                                        <a class="a bo-a" href="#">
+                                            <p class="bo-avatar">
+                                                <img class="sp-img img-fluid" src="FileUpload/Product/SearchPopular/t7.jpg" />
+                                            </p>
+                                            <p class="bo-o">
+                                                Nước Hoa Nam
+                                                <br />
+                                                <span class="o-span">
+                                                    16,947 Sản phẩm
+                                                </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="sp-box-t">
+                                    <div class="b-one">
+                                        <a class="a bo-a" href="#">
+                                            <p class="bo-avatar">
+                                                <img class="sp-img img-fluid" src="FileUpload/Product/SearchPopular/t8.jpg" />
+                                            </p>
+                                            <p class="bo-o">
+                                                Son Lì
+                                                <br />
+                                                <span class="o-span">
+                                                    15,248 Sản phẩm
+                                                </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="b-two">
+                                        <a class="a bo-a" href="#">
+                                            <p class="bo-avatar">
+                                                <img class="sp-img img-fluid" src="FileUpload/Product/SearchPopular/t9.jpg" />
+                                            </p>
+                                            <p class="bo-o">
+                                                Túi xách nữ
+                                                <br />
+                                                <span class="o-span">
+                                                    541,152 Sản phẩm
+                                                </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+
+                    <!-- Collection -->
+                    <!--<div class="collection">
+                        <h3 class="c-title">
+                            Bộ sưu tập
+                        </h3>
+                        <div class="row">
+                            <div class="col-lg-3 col-6">
+                                <div class="c-box">
+                                    <a class="cb-a" href="#">
+                                        <p class="ap-title">
+                                            Thể Thao Năng Động >
+                                            <br />
+                                            <span class="aps">
+                                                1,174 Sản phẩm
+                                            </span>
+                                        </p>
+                                        <p class="ap-img">
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t1.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t2.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t3.jpg" />
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="c-box">
+                                    <a class="cb-a" href="#">
+                                        <p class="ap-title">
+                                            Làm Đẹp Quay TikTok >
+                                            <br />
+                                            <span class="aps">
+                                                6,208 Sản phẩm
+                                            </span>
+                                        </p>
+                                        <p class="ap-img">
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t4.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t5.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t6.png" />
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="c-box">
+                                    <a class="cb-a" href="#">
+                                        <p class="ap-title">
+                                            Đồ chơi 99k >
+                                            <br />
+                                            <span class="aps">
+                                                7,364 Sản phẩm
+                                            </span>
+                                        </p>
+                                        <p class="ap-img">
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t7.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t8.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t9.jpg" />
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="c-box">
+                                    <a class="cb-a" href="#">
+                                        <p class="ap-title">
+                                            Yêu Nhà Nghiện Bếp >
+                                            <br />
+                                            <span class="aps">
+                                                15,875 Sản phẩm
+                                            </span>
+                                        </p>
+                                        <p class="ap-img">
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t10.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t11.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t12.jpg" />
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="c-box">
+                                    <a class="cb-a" href="#">
+                                        <p class="ap-title">
+                                            Túi Ví Nữ >
+                                            <br />
+                                            <span class="aps">
+                                                1,253 Sản phẩm
+                                            </span>
+                                        </p>
+                                        <p class="ap-img">
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t13.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t14.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t15.jpg" />
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="c-box">
+                                    <a class="cb-a" href="#">
+                                        <p class="ap-title">
+                                            Phụ Kiện 5 Sao >
+                                            <br />
+                                            <span class="aps">
+                                                10,341 Sản phẩm
+                                            </span>
+                                        </p>
+                                        <p class="ap-img">
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t16.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t17.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t18.jpg" />
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="c-box">
+                                    <a class="cb-a" href="#">
+                                        <p class="ap-title">
+                                            [Rẻ] Cuộc sống tiện lợi >
+                                            <br />
+                                            <span class="aps">
+                                                599 Sản phẩm
+                                            </span>
+                                        </p>
+                                        <p class="ap-img">
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t19.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t20.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t21.jpg" />
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="c-box">
+                                    <a class="cb-a" href="#">
+                                        <p class="ap-title">
+                                            Túi, Vali Du lịch >
+                                            <br />
+                                            <span class="aps">
+                                                577 Sản phẩm
+                                            </span>
+                                        </p>
+                                        <p class="ap-img">
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t22.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t23.jpg" />
+                                            <img class="ap-avatar img-fluid" src="FileUpload/Product/Collection/t24.jpg" />
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+
+                    <!-- ProductForYou -->
+                    <!--<div class="top-sale ">
+                        <h3 class="mt-3">
+                            Dành riêng cho bạn
+                        </h3>
+                        <div class="ts-time">
+                            <div class="ts-product mt-3">
+                                <div class="row">
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t1.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    Khăn tắm, khăn lau đầu cotton xuất Châu Âu dư 40* 80cm [Loại đẹp]
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        40.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -45%
+                                                    </span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t2.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    ( FREESHIP + TẶNG MK + VIDEO ) Túi đeo chéo mini nam nữ unisex thời
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        59.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -63%
+                                                    </span>
+                                                </p>
+
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t3.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    [HCM]Khẩu trang y tế 4 lớp hộp 50 cái Kháng Khuẩn có tem logo
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        49.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -55%
+                                                    </span>
+                                                </p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t2.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    Bra Sexy Mút Mỏng Không Gọng 7311 [Tiện Store]
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        50.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -56%
+                                                    </span>
+                                                </p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t5.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    [HCM]500G NGÔ MỸ NỔ BẮP RANG BƠ - CHƯA CHẾ BIẾN - đồ ăn vặt
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        30.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -27%
+                                                    </span>
+                                                </p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t6.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    Áo Lót Học Sinh,Áo lót bra quây 2 dây 267 Vải Mát Lạnh
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        50.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -56%
+                                                    </span>
+                                                </p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t1.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    Khăn tắm, khăn lau đầu cotton xuất Châu Âu dư 40* 80cm [Loại đẹp]
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        40.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -45%
+                                                    </span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t2.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    ( FREESHIP + TẶNG MK + VIDEO ) Túi đeo chéo mini nam nữ unisex thời
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        59.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -63%
+                                                    </span>
+                                                </p>
+
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t3.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    [HCM]Khẩu trang y tế 4 lớp hộp 50 cái Kháng Khuẩn có tem logo
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        49.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -55%
+                                                    </span>
+                                                </p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t2.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    Bra Sexy Mút Mỏng Không Gọng 7311 [Tiện Store]
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        50.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -56%
+                                                    </span>
+                                                </p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t5.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    [HCM]500G NGÔ MỸ NỔ BẮP RANG BƠ - CHƯA CHẾ BIẾN - đồ ăn vặt
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        30.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -27%
+                                                    </span>
+                                                </p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-4 mb-3">
+                                        <div class="b-product">
+                                            <a class="p-a a" href="#">
+
+                                                <p class="p-img">
+                                                    <img src="FileUpload/Product/TopSale/t6.jpg" class="img-avatar img-fluid" />
+                                                </p>
+                                                <p class="p-title">
+                                                    Áo Lót Học Sinh,Áo lót bra quây 2 dây 267 Vải Mát Lạnh
+                                                </p>
+                                                <p class="p-newPrice">
+                                                    22.000đ
+                                                </p>
+                                                <p class="p-oldPrice">
+                                                    <span class="p-include">
+                                                        50.000đ
+                                                    </span>
+                                                    <span class="p-bonus">
+                                                        -56%
+                                                    </span>
+                                                </p>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+
+                    <!-- Delevery -->
+                    <!--<div class="b-delivery pt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a class="a d-a" href="#">
+                                    <img class="d-img  img-fluid" src="FileUpload/Product/Delivery/t1.png" />
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a class="a d-a" href="#">
+                                    <img class="d-img  img-fluid" src="FileUpload/Product/Delivery/t2.png" />
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a class="a d-a" href="#">
+                                    <img class="d-img  img-fluid" src="FileUpload/Product/Delivery/t3.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>-->
+
+                </div>
+            </div>
+        </div>
+      
+        <!-- Amount -->
+        <!--<div class="amount pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="a-box">
+                            <p class="ab-title">
+                                LIÊN HỆ VỚI LAZADA
+                            </p>
+                            <ul class="ab-ul">
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Hotline & Chat trực tuyến (24/7)
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Trung tâm hỗ trợ
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Hướng dẫn đặt hàng
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Giao hàng & Nhận hàng
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Chính sách hàng nhập khẩu
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Hướng dẫn đổi trả hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="a-box">
+                            <p class="ab-title">
+                                LAZADA VIỆT NAM
+                            </p>
+                            <ul class="ab-ul">
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Về Lazada Việt Nam
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Bán hàng cùng Lazada
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Chương trình Lazada Afﬁliate
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Tuyển dụng
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Điều khoản sử dụng
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Chính sách bảo mật
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Báo chí
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Bảo vệ quyền sở hữu trí tuệ
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Quy chế hoạt động sàn Lazada
+                                    </a>
+                                </li>
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        Quy trình giải quyết tranh chấp, khiếu nại
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="a-box">
+                            <div class="ab-titletwo">
+                                <img class="abt-img img-fluid" src="~/Image/TB1iTziekWE3KVjSZSyXXXocXXa-42-42.png" />
+                                <p class="abt-p">
+                                    Go where your heart beats
+                                    <br />
+                                    <span class="abt-span">
+                                        Tải App Lazada
+                                    </span>
+                                </p>
+                            </div>
+                            <ul class="ab-ul">
+                                <li class="ab-li">
+                                    <a class="a ab-a" href="#">
+                                        CÔNG TY TNHH RECESS
+                                        <br />
+                                        Giấy CNĐKDN: 0308808576 – Ngày cấp: 06/5/2009, được sửa đổi lần thứ 19 ngày 15/8/2019.
+                                        <br />
+                                        Cơ quan cấp: Phòng Đăng ký kinh doanh – Sở kế hoạch và Đầu tư TP.HCM
+                                        <br />
+                                        Địa chỉ đăng ký kinh doanh: Tầng 19, Tòa nhà Saigon Centre – Tháp 2, 67 Lê Lợi, Phường Bến Nghé, Quận 1, Tp. Hồ Chí Minh, Việt Nam.
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+        <!-- Footer -->
+        <div class="footer py-3">
+            <div class="container">
+                <div class="f-box">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="fb-title">
+                                Lazada Southeast Asia
+                            </div>
+                            <ul class="fb-ul">
+                                <li class="fb-li ">
+                                    <a class="fb-a" href="#">
+                                        <img class="fb-img img-fluid" src="~/Image/footer/t1.png" />
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a" href="#">
+                                        <img class="fb-img img-fluid" src="~/Image/footer/t2.png" />
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a" href="#">
+                                        <img class="fb-img img-fluid" src="~/Image/footer/t3.png" />
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a" href="#">
+                                        <img class="fb-img img-fluid" src="~/Image/footer/t4.jpg" />
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a" href="#">
+                                        <img class="fb-img img-fluid" src="~/Image/footer/t5.png" />
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a" href="#">
+                                        <img class="fb-img img-fluid" src="~/Image/footer/t6.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="fb-title">
+                                Kết nối với chúng tôi
+                            </div>
+                            <ul class="fb-ul">
+                                <li class="fb-li">
+                                    <a class="fb-a a-fb" href="#">
+                                        <i class="fa fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a  a-in" href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a  a-gg" href="#">
+                                        <i class="fa fa-google"></i>
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a  a-yt" href="#">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a  a-yt" href="#">
+                                        <i class="fa fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+                                <li class="fb-li ">
+                                    <a class="fb-a  a-z" href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            © Lazada 2023
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JS -->
+        <section class="js">
+            <script src="~/Scripts/popper.js"></script>
+            <script src="~/Scripts/jquery-3.0.0.js"></script>
+            <script src="~/Scripts/bootstrap.js"></script>
+            <script src="~/Scripts/main-script.js"></script>
+        </section>
+    </div>
+</body>
+</html>

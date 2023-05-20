@@ -1,0 +1,129 @@
+﻿@model Product
+<div class="product-detail">
+    <h3 class="text-center my-3">
+        @Model.Name
+    </h3>
+    <div class="pd-main">
+        <div class="pd-box">
+            <div class="b-img">
+                <img class="img-avatar" src="@Model.Image" />
+            </div>
+        </div>
+        <div class="box-main">
+            <div class="bm-sale">
+                <img class="img-sale" src="~/Image/sale-avatar.png" />
+                <div class="sale-t">
+                    Bắt đầu vào <b>00:00:00 ngày 11 tháng 11</b>
+                </div>
+            </div>
+            <div class="laza">
+                <img class="img-laza" src="~/Image/lazamall.png" />
+            </div>
+            <div class="pd-title">
+                @Model.Name
+            </div>
+            <div class="pd-like">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <a class="l-fb c-blue" href="#">15 đánh giá</a>
+            </div>
+            <div class="pd-trademark">
+                <span class="td-t c-gray">
+                    Thương hiệu:   @Model.Category.Name
+                </span>
+            </div>
+            @{
+                int giaKhuyenMai = @Model.Price - ((@Model.Price * @Model.Discount) / 100);
+            }
+            <div class="pd-price">
+                <span class="td-t c-gray">
+                    Giá khuyến mãi:
+                </span>
+                @giaKhuyenMai.ToString("#,##0")
+            </div>
+            <p class="p-oldPrice">
+                <span class="td-t c-gray">
+                    Giá cửa hàng:
+                </span>
+                <span class="p-include" style="text-decoration:line-through">
+                    @Model.Price.ToString("#,##0")
+                </span>
+            </p>
+            <div class="pd-format">
+                <span class="td-t c-gray">
+                    Khuyến mãi:
+                </span>
+                <a class="fm-a" href="#">
+                    @Model.Discount %
+                </a>
+            </div>
+            <div class="pd-buy">
+                <a class="b-other" href="#">
+                    Mua ngay
+                </a>
+                <a class="b-shopping" href="#">
+                    Thêm vào giỏ hàng
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pd-description">
+        <h3 class="my-3">
+            Mô tả sản phẩm
+        </h3>
+        <h4 class="text-center">
+            @Model.Name
+        </h4>
+        <p>
+            @Model.Description
+        </p>
+    </div>
+</div>
+
+<!-- ProductForYou -->
+<div class="top-sale ">
+    <h3 class="mt-3">
+        Sản phẩm liên quan
+    </h3>
+    <div class="ts-time">
+        <div class="ts-product mt-3">
+            <div class="row">
+                @foreach (var item in ViewBag.ProductRelated)
+                {
+                    <div class="col-lg-3 col-6 mb-3">
+                        <div class="b-product">
+                            <a class="p-a a" href="@Url.Action("Detail", "Product", new { productId = item.ProductId })">
+                                <p class="p-img">
+                                    <img src="@item.Image" class="img-avatar img-fluid" />
+                                </p>
+                                <p class="p-title">
+                                    @item.Name
+                                </p>
+                                <p class="p-newPrice">
+                                    @{
+                                        int giaKhuyenMai1 = item.Price - ((item.Price * item.Discount) / 100);
+                                    }
+                                    @giaKhuyenMai1.ToString("#,##0")
+                                </p>
+                                <p class="p-oldPrice">
+                                    <span class="p-include">
+                                        @item.Price.ToString("#,##0")
+                                    </span>
+                                    <span class="p-bonus">
+                                        @item.Discount %
+                                    </span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
